@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'ssf4';
+    src: url('../fontes/SSF4_ABUKET.woff'); 
+  }
+  
+  @font-face {
+    font-family: 'command';
+    src: url('../fontes/PILOT_COMMAND.otf');
+  }
+
+@font-face {
+  font-family: 'digimon';
+  src: url('../fontes/DigimonBasic.ttf');
+}
