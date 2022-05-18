@@ -189,13 +189,12 @@ button{
 }
 
 .autoplay{
-    width: 4%;
-    height: 30px;
-
+    width: 7%;
+    height:20px;
     position: relative;  
     display: flex;
-    background: transparent;
-    background-color: transparent;
+   opacity: 0.6;
+    
 }
 
 audio::-webkit-media-controls-panel {
