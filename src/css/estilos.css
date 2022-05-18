@@ -1,6 +1,8 @@
 body {
     font-family: 'digimon', Courier, monospace;
     background: var(--cor-secundaria);
+    overflow:hidden;
+    
 }
 
 body::before {
@@ -167,7 +169,7 @@ main {
 }
 
 footer {
-    z-index: 1;
+    z-index: 2;
     /* traz o elemento pra frente */
     display: flex;
     justify-content: center;
@@ -176,13 +178,80 @@ footer {
     font-size: 22px;
     line-height: 42px;
     font-family: 'digimon', sans-serif;
-    -webkit-text-stroke: 2px var(--cor-titulo-forte)
+    -webkit-text-stroke: 2px var(--cor-titulo-forte);
 }
 
 button{
     z-index: 2;
     position: relative;
-    display: flex;
-    justify-content: center;
     list-style: none;
+    opacity: 0.8;
 }
+
+.autoplay{
+    width: 4%;
+    height: 30px;
+
+    position: relative;  
+    display: flex;
+    background: transparent;
+    background-color: transparent;
+}
+
+audio::-webkit-media-controls-panel {
+    opacity: 0.3;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+  }
+
+
+
+
+  audio::-webkit-media-controls-mute-button {
+    background-color: rgb(98, 52, 238);
+    border-radius: 50%;
+  }
+
+  audio::-webkit-media-controls-play-button {
+    background-color: rgb(245, 244, 249);
+    border-radius: 50%;
+    opacity: 1;
+  }
+
+  audio::-webkit-media-controls-timeline{
+      opacity: 0;
+      display: none;
+  }
+
+  audio::-webkit-media-controls-current-time-display{
+      opacity: 0;
+      display: none;  
+  }
+
+audio::-webkit-media-controls-time-remaining-display{
+    opacity: 0;
+    display: none;
+}
+audio::-webkit-media-controls-timeline-container{
+    opacity: 0;
+    display: none;
+}
+
+audio::-webkit-media-controls-toggle-closed-captions-button{
+    display: none;
+}
+
+audio::-webkit-media-controls-rewind-button{
+    display: none;
+}
+
+
+#audio-player-container {
+    display: flex;
+    justify-content: end;
+  }
+
+  
+
+

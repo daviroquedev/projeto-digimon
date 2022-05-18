@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escolha seu personagem</title>
+    <title>Escolha seu digimon</title>
     <link rel="stylesheet" href="./src/css/variaveis.css" />
     <link rel="stylesheet" href="./src/css/fontes.css" />
     <link rel="stylesheet" href="./src/css/reset.css" />
@@ -16,9 +16,10 @@
 </head>
 
 <body>
-    <audio autoplay id="myAudio" src="./src/audio/digimon.mp3"></audio>
-    <button onclick="enableMute()" type="button">MUTE</button>
-   
+    <!-- <button onclick="enableMute()" type="button">MUTE</button> -->
+    <div id="audio-player-container">
+        <audio autoplay controls id="myAudio" class="autoplay" src="./src/audio/digimon.mp3"></audio>
+      </div>
     <main>
         <header class="cabecalho">
             <h1 class="titulo">
@@ -90,14 +91,15 @@
                 </div>
             </div>
         </div>
+        <footer>
+            <h2 class="footer"> Desenvolvido por Davi Roque - DevWeek </h2>
+         </footer>
     </main>
     <!-- <audio controls autoplay class="audio">
         <source src="./src/audio/digimon.mp3" type="audio/mp3">
     </audio> -->
    
-    <footer>
-       <h2 class="footer"> Desenvolvido por Davi Roque - DevWeek </h2>
-    </footer>
+   
     <script src="./src/js/index.js"></script>
 </body>
 

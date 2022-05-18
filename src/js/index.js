@@ -51,11 +51,15 @@ personagens.forEach((personagem) => {
     })
 })
 
-var x = document.getElementById("myAudio");
+// var x = document.getElementById("myAudio");
 
-function enableMute() { 
-  x.muted = !myAudio.muted;
-} 
+// function enableMute() { 
+//   x.muted = !myAudio.muted;
+// } 
+
+// function playSound(){
+//   new Audio(URL).play()
+// }
 
 // function disableMute() { 
 //   x.muted = false;
